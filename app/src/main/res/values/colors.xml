@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#7dbbb9</color>
+    <color name="colorPrimaryDark">#2a5d68 </color>
+    <color name="colorAccent">#d8d3d0</color>
+    <color name="colorExist">#c5d7d9</color>
+
+    <color name="borderLow">#2a5d68</color>
+    <color name="borderHigh">#7dbbb9</color>
+    <color name="gradientStart">@android:color/transparent</color>
+    <color name="gradientEnd">@android:color/transparent</color>
+    <color name="text">#c5d7d9</color>
+    <color name="shadow">#FFFFFF</color>
+
+
+    <color name="white">#FFFFFF</color>
+    <color name="yellow">#fcfcc7</color>
+    <color name="orange">#ff983d</color>
+    <color name="green">#98ff75</color>
+    <color name="red">#ff5959</color>
+
+</resources>

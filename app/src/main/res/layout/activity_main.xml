@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:keepScreenOn="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        tools:context=".MainActivity">
+
+
+        <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+            android:id="@+id/mcv"
+            android:layout_width="0dp"
+            android:layout_height="160dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:mcv_selectionColor="#7dbbb9"
+            app:mcv_showOtherDates="all"
+            app:mcv_tileWidth="match_parent" />
+
+
+        <LinearLayout
+            android:id="@+id/lv1"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:background="@drawable/panel"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mcv">
+
+            <LinearLayout
+                android:id="@+id/lh1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal"
+                android:paddingStart="7dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                tools:ignore="RtlSymmetry">
+
+                <TextView
+                    android:id="@+id/txPH"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/ph"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="38sp"
+                    app:autoSizeTextType="uniform" />
+
+                <EditText
+                    android:id="@+id/ph"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:ems="3"
+                    android:importantForAutofill="no"
+                    android:inputType="numberDecimal"
+                    android:maxLength="5"
+                    android:paddingStart="15dp"
+                    android:textSize="36sp"
+                    tools:ignore="LabelFor" />
+
+                <TextView
+                    android:id="@+id/rsPH"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lv2"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:background="@drawable/panel"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lv1">
+
+            <LinearLayout
+                android:id="@+id/lh2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal"
+                android:paddingStart="7dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                tools:ignore="RtlSymmetry">
+
+                <TextView
+                    android:id="@+id/txGH"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/gh"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="38sp"
+                    app:autoSizeTextType="uniform" />
+
+                <EditText
+                    android:id="@+id/gh"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:ems="3"
+                    android:importantForAutofill="no"
+                    android:inputType="numberDecimal"
+                    android:maxLength="5"
+                    android:paddingStart="15dp"
+                    android:textSize="36sp"
+                    tools:ignore="LabelFor" />
+
+                <TextView
+                    android:id="@+id/rsGH"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lv3"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:background="@drawable/panel"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lv2">
+
+            <LinearLayout
+                android:id="@+id/lh3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal"
+                android:paddingStart="7dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                tools:ignore="RtlSymmetry">
+
+                <TextView
+                    android:id="@+id/txKH"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/kh"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="38sp" />
+
+                <EditText
+                    android:id="@+id/kh"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:ems="3"
+                    android:importantForAutofill="no"
+                    android:inputType="numberDecimal"
+                    android:maxLength="5"
+                    android:paddingStart="15dp"
+                    android:textSize="36sp"
+                    tools:ignore="LabelFor" />
+
+                <TextView
+                    android:id="@+id/rsKH"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lv4"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:background="@drawable/panel"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lv3">
+
+            <LinearLayout
+                android:id="@+id/lh4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal"
+                android:paddingStart="7dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                tools:ignore="RtlSymmetry">
+
+                <TextView
+                    android:id="@+id/txNO2"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/no2"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="38sp"
+                    app:autoSizeTextType="uniform" />
+
+                <EditText
+                    android:id="@+id/no2"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:ems="3"
+                    android:importantForAutofill="no"
+                    android:inputType="numberDecimal"
+                    android:maxLength="5"
+                    android:paddingStart="15dp"
+                    android:textSize="36sp"
+                    tools:ignore="LabelFor" />
+
+                <TextView
+                    android:id="@+id/rsNO2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lv5"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:background="@drawable/panel"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lv4">
+
+            <LinearLayout
+                android:id="@+id/lh5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal"
+                android:paddingStart="7dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                tools:ignore="RtlSymmetry">
+
+                <TextView
+                    android:id="@+id/txNO3"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/no3"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="38sp"
+                    app:autoSizeTextType="uniform" />
+
+                <EditText
+                    android:id="@+id/no3"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:ems="3"
+                    android:importantForAutofill="no"
+                    android:inputType="numberDecimal"
+                    android:maxLength="5"
+                    android:paddingStart="15dp"
+                    android:textSize="36sp"
+                    tools:ignore="LabelFor" />
+
+                <TextView
+                    android:id="@+id/rsNO3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lv6"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:background="@drawable/panel"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lv5">
+
+            <LinearLayout
+                android:id="@+id/lh6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal"
+                android:paddingStart="7dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                tools:ignore="RtlSymmetry">
+
+                <TextView
+                    android:id="@+id/txPO4"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/po4"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="38sp"
+                    app:autoSizeTextType="uniform" />
+
+                <EditText
+                    android:id="@+id/po4"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:ems="3"
+                    android:importantForAutofill="no"
+                    android:inputType="numberDecimal"
+                    android:maxLength="5"
+                    android:paddingStart="15dp"
+                    android:textSize="36sp"
+                    tools:ignore="LabelFor" />
+
+                <TextView
+                    android:id="@+id/rsPO4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lv7"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:background="@drawable/panel"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lv6">
+
+            <LinearLayout
+                android:id="@+id/lh7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal"
+                android:paddingStart="7dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                tools:ignore="RtlSymmetry">
+
+                <TextView
+                    android:id="@+id/txNH3"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center|fill"
+                    android:text="@string/nh3"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="38sp"
+                    app:autoSizeTextType="uniform" />
+
+                <EditText
+                    android:id="@+id/nh3"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:ems="3"
+                    android:importantForAutofill="no"
+                    android:inputType="numberDecimal"
+                    android:maxLength="5"
+                    android:paddingStart="15dp"
+                    android:textSize="36sp"
+                    tools:ignore="LabelFor" />
+
+                <TextView
+                    android:id="@+id/rsNH3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lv8"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:background="@drawable/panel"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lv7">
+
+            <LinearLayout
+                android:id="@+id/lh8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal"
+                android:paddingStart="7dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                tools:ignore="RtlSymmetry">
+
+                <TextView
+                    android:id="@+id/txCO2"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/co2"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="38sp"
+                    app:autoSizeTextType="uniform" />
+
+                <EditText
+                    android:id="@+id/co2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="3"
+                    android:enabled="false"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    android:paddingStart="15dp"
+                    android:textSize="36sp"
+                    tools:ignore="LabelFor" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/action"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:elevation="6dp"
+            android:stateListAnimator="@null"
+            android:text="@string/save"
+            android:theme="@style/RoundedCornerButton"
+            android:translationZ="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lv8" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

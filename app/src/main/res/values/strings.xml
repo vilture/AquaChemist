@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">AquaСhemist</string>
+    <string name="ph">pH</string>
+    <string name="gh">gH</string>
+    <string name="kh">kH</string>
+    <string name="no2">NO2</string>
+    <string name="no3">NO3</string>
+    <string name="po4">PO4</string>
+    <string name="nh3">NH3/NH4</string>
+    <string name="co2">CO2</string>
+    <string name="save">Сохранить</string>
+</resources>
