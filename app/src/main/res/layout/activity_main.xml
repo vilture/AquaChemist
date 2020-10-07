@@ -16,17 +16,26 @@
 
         tools:context=".MainActivity">
 
-
-        <com.prolificinteractive.materialcalendarview.MaterialCalendarView
-            android:id="@+id/mcv"
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_refresh"
             android:layout_width="0dp"
             android:layout_height="160dp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:mcv_selectionColor="#7dbbb9"
-            app:mcv_showOtherDates="all"
-            app:mcv_tileWidth="match_parent" />
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+                android:id="@+id/mcv"
+                android:layout_width="0dp"
+                android:layout_height="160dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:mcv_selectionColor="#7dbbb9"
+                app:mcv_showOtherDates="all"
+                app:mcv_tileWidth="match_parent" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
 
         <LinearLayout
@@ -37,7 +46,7 @@
             android:orientation="vertical"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/mcv">
+            app:layout_constraintTop_toBottomOf="@+id/swipe_refresh">
 
             <LinearLayout
                 android:id="@+id/lh1"
@@ -458,12 +467,16 @@
                     android:id="@+id/co2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
                     android:ems="3"
                     android:enabled="false"
                     android:importantForAutofill="no"
                     android:inputType="text"
                     android:paddingStart="15dp"
-                    android:textSize="36sp"
+                    android:paddingEnd="15dp"
+                    android:paddingBottom="15dp"
+                    android:textAlignment="center"
+                    android:textSize="24sp"
                     tools:ignore="LabelFor" />
 
             </LinearLayout>
