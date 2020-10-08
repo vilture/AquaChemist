@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">AquaСhemist</string>
+    <string name="app_name">AquaChemist</string>
     <string name="ph">pH</string>
     <string name="gh">gH</string>
     <string name="kh">kH</string>
