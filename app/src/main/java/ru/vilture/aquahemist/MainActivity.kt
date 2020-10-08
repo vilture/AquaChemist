@@ -352,8 +352,8 @@ class MainActivity : AppCompatActivity(), OnDateSelectedListener, OnMonthChanged
         val double = no2.text.toString().toDouble()
         if (double >= 0.3) rsNO2.setBackgroundResource(R.color.orange)
         if (double >= 2.0) rsNO2.setBackgroundResource(R.color.red)
-        if (double == 0.0) rsNO2.setBackgroundResource(R.color.yellow)
-        if (double in 0.1..0.5) rsNO2.setBackgroundResource(R.color.green)
+        if (double == 0.0) rsNO2.setBackgroundResource(R.color.green)
+        if (double in 0.1..0.5) rsNO2.setBackgroundResource(R.color.yellow)
     }
 
     private fun rsNO3(no3: EditText?) {
